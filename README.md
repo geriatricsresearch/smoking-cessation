@@ -1,5 +1,6 @@
 # Smoking Cessation
 
+## Project Details
 **Principal Investigator**
 - Lauren Hunt           
    
@@ -24,3 +25,6 @@ There are no publications yet for this material.
 
 **Software**  
 SAS, Stata, R
+
+## Aims
+The first aim quantifies trends in smoking prevalence between years 1998 to 2018. The second aim calculated the incidence of smoking cessation using competing risks survival models.
