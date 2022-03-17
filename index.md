@@ -1,3 +1,11 @@
+---
+layout: default
+title: Home
+nav_order: 1
+description: "Add description here."
+permalink: /
+---
+
 # Smoking Cessation
 
 ## Project Details
