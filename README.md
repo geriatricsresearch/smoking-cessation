@@ -1,2 +1,26 @@
-# smoking-cessation
-Explores prevalence of smoking and patterns of smoking cessation from 1998 to 2018
+# Smoking Cessation
+
+**Principal Investigator**
+- Lauren Hunt           
+   
+**Statistician**           
+- Edie Espejo  
+- Irena Cenzer (Supervised)            
+
+**Collaborators**          
+- Sean Morrison
+- Katherin Ornstein
+- John Boscardin
+- Alexander Smith
+
+**Data**
+- HRS 2018 v1
+
+**Project Start**  
+This project began on 2021-03-08.
+
+**Publication**  
+There are no publications yet for this material.
+
+**Software**  
+SAS, Stata, R
