@@ -6,7 +6,7 @@
 
 **Statistician**           
 - Edie Espejo  
-- Irena Cenzer (Supervising)            
+- Irena Cenzer         
 
 **Collaborators**          
 - To be updated
