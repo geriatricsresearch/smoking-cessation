@@ -105,17 +105,27 @@ count_tab_1[is.na(count_tab_1)] <- 0
 write_csv(count_tab_1, '../tables/cohort-longitudinal-v1-counts.csv')
 
 
-long_data_v4 %>%
+
+
+long_data_v5 <- long_data_v4 %>%
+  mutate(Group=factor(Group, levels=c('Dead, No Quit', 'No Quit', 'Dead, Quit', 'Quit')))
+
+
+long_data_v5 %>%
   ggplot(aes(x=YEAR, fill=Group)) +
   geom_bar(position='fill') +
   scale_x_continuous(breaks=seq(1998, 2018, 2)) +
   theme_classic() +
-  theme(axis.text.x=element_text(angle=45, vjust=0.5, hjust=0.25)) +
-  scale_fill_manual(values=c('grey', '#7F8778', '#608341', 'pink', 'pink3')) +
-  ggtitle(label='Cohort Distribution Over Study Period',
-          subtitle='Aged 55+ in 1998') +
+  scale_fill_manual(values=c('grey', '#4A4A4A', '#87CEFF', '#26466D')) +
   xlab('Year') +
-  ylab('Proportion')
+  ylab('Proportion') +
+  theme(axis.text.x=element_text(size=15),
+        axis.text.y=element_text(size=15),
+        legend.text=element_text(size=15),
+        axis.title.x=element_text(face='bold', size=15),
+        axis.title.y=element_text(face='bold', size=15),
+        legend.title=element_text(face='bold', size=15),
+        title=element_text(face='bold', size=18))
 
 ggsave(plot=last_plot(), filename='../plots/cohort-longitudinal-v1.png', dpi=300, height=7, width=10)
 
@@ -130,18 +140,22 @@ count_tab_2[is.na(count_tab_2)] <- 0
 write_csv(count_tab_2, '../tables/cohort-longitudinal-v2-counts.csv')
 
 
-long_data_v4 %>%
+long_data_v5 %>%
   filter(AGE_1998<=65) %>%
   ggplot(aes(x=YEAR, fill=Group)) +
   geom_bar(position='fill') +
   scale_x_continuous(breaks=seq(1998, 2018, 2)) +
   theme_classic() +
-  theme(axis.text.x=element_text(angle=45, vjust=0.5, hjust=0.25)) +
-  scale_fill_manual(values=c('grey', '#7F8778', '#608341', 'pink', 'pink3')) +
-  ggtitle(label='Cohort Distribution Over Study Period',
-          subtitle='Aged 55-65 in 1998') +
+  scale_fill_manual(values=c('grey', '#4A4A4A', '#87CEFF', '#26466D')) +
   xlab('Year') +
-  ylab('Proportion')
+  ylab('Proportion') +
+  theme(axis.text.x=element_text(size=15),
+        axis.text.y=element_text(size=15),
+        legend.text=element_text(size=15),
+        axis.title.x=element_text(face='bold', size=15),
+        axis.title.y=element_text(face='bold', size=15),
+        legend.title=element_text(face='bold', size=15),
+        title=element_text(face='bold', size=18))
 
 ggsave(plot=last_plot(), filename='../plots/cohort-longitudinal-v2.png', dpi=300, height=7, width=10)
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Incidence of Smoking Cessation in Older Adults
+title: Aim 2: Incidence of Smoking Cessation in Older Adults
 nav_order: 3
 ---
 

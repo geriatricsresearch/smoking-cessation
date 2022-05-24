@@ -46,7 +46,8 @@ stcurve_v1 %>%
   ggtitle(label='Cumulative Incidence Plot',
           subtitle='Pamaretric, using `stcurve, cif`') +
   scale_color_manual(values=c('#608341', '#3d3d3d', 'pink3')) +
-  theme_bw()
+  theme_bw() +
+  xlim(c(55+min(stcurve_v1$`_t`), 90))
 
 ggsave(plot=last_plot(), filename='../plots/cif-stcurve.png', dpi=300, height=7, width=10)
 
@@ -72,10 +73,16 @@ stcurve_full %>%
   geom_line(aes(col=`Cigarettes Per Day`), alpha=0.7) +
   xlab('Age') +
   ylab('Cumulative Incidence') +
-  ggtitle(label='Cumulative Incidence Plot',
-          subtitle='Pamaretric, using `stcurve, cif`') +
   scale_color_manual(values=c('#608341', '#3d3d3d', 'pink3', 'cornflowerblue')) +
-  theme_bw()
+  theme_bw() +
+  xlim(c(56.83504, 90)) +
+  theme(axis.text.x=element_text(size=15),
+        axis.text.y=element_text(size=15),
+        legend.text=element_text(size=15),
+        axis.title.x=element_text(face='bold', size=15),
+        axis.title.y=element_text(face='bold', size=15),
+        legend.title=element_text(face='bold', size=15),
+        title=element_text(face='bold', size=18))
 
 ggsave(plot=last_plot(), filename='../plots/cif-stcurve-overall.png', dpi=300, height=7, width=10)
 

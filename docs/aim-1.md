@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Prevalence of Smoking in Older Adults
+title: Aim 1: Prevalence of Smoking in Older Adults
 nav_order: 2
 ---
 
