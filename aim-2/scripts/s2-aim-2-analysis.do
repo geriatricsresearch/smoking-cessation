@@ -1,6 +1,7 @@
 * Edie Espejo
 * 2022-01-31
 * 2022-03-13
+* 2022-06-03
 
 clear
 use "V:/Health and Retirement Study/edie/projects/smoking-cessation/aim-2.dta"
@@ -88,10 +89,10 @@ collect export "../tables/survival-estimates.xlsx", sheet(saturated) modify
 stset AGE_OUTCOME [pweight=WGTR], failure(OUTCOME==1) origin(AGE_ORIGIN) enter(AGE_1998)
 stcrreg i.($TABLE1VARS) if SUBPOP, compete(OUTCOME==2)
 *stcurve, cif at1(SMOKE_CAT=0) at2(SMOKE_CAT=1) at3(SMOKE_CAT=2)
-stcurve, cif at(SMOKE_CAT=(0 1 2)) outfile("V:/Health and Retirement Study/edie/projects/smoking-cessation/2022-03-13 data/cif-stcurve-4.dta")
+stcurve, cif at(SMOKE_CAT=(0 1 2)) outfile("V:/Health and Retirement Study/edie/projects/smoking-cessation/2022-06-03 data/cif-stcurve-4.dta")
 *save "V:\Health and Retirement Study\edie\projects\smoking-cessation\2022-03-13 data\cif-stcurve-data-2.dta"
 
-stcurve, cif outfile("V:/Health and Retirement Study/edie/projects/smoking-cessation/2022-03-13 data/stcurve-overall-4.dta")
+stcurve, cif outfile("V:/Health and Retirement Study/edie/projects/smoking-cessation/2022-06-03 data/stcurve-overall-4.dta")
 
 
 * Non-parametric plot
@@ -104,7 +105,7 @@ gen cif_cig2=cif0 if OUTCOME==1 & SMOKE_CAT==2 & SUBPOP==1
 
 twoway line cif_cig* _t, connect(step step) sort
 
-outsheet using "V:\Health and Retirement Study\edie\projects\smoking-cessation\2022-03-13 data\cif-stcompet-data-4.csv", comma nolabel
+outsheet using "V:\Health and Retirement Study\edie\projects\smoking-cessation\2022-06-03 data\cif-stcompet-data-4.csv", comma nolabel
 
 
 
@@ -115,7 +116,7 @@ stcompet cif1=ci, compet1(2)
 gen cif_overall=cif1 if OUTCOME==1 & (SMOKE_CAT==1 | SMOKE_CAT==2 | SMOKE_CAT==0) & SUBPOP==1
 twoway line cif_overall _t, sort
 
-outsheet using "V:\Health and Retirement Study\edie\projects\smoking-cessation\2022-03-13 data\cif-stcompet-overall-4.csv", comma nolabel
+outsheet using "V:\Health and Retirement Study\edie\projects\smoking-cessation\2022-06-03 data\cif-stcompet-overall-4.csv", comma nolabel
 
 
 
@@ -154,6 +155,9 @@ collect export "../tables/survival-estimates.xlsx", sheet(mice) modify
 
 
 * Summary Statistics ----------------------------------------------------------
+
+clear
+use "V:/Health and Retirement Study/edie/projects/smoking-cessation/aim-2.dta"
 tabstat AGE_1998 ATOTA if SUBPOP, stats(n mean sd min p25 median p75 max) columns(statistics) save
 mat T = r(StatTotal)'
 
