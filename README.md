@@ -18,7 +18,7 @@ We used data on respondents from the Health and Retirement Study <a href='https:
 This project began on 2021-03-08.
 
 **Publications**  
-There are no publications yet for this project.
+[The Epidemiology of Smoking in Older Adults: A National Cohort Study](https://link.springer.com/epdf/10.1007/s11606-022-07980-w?sharing_token=8KamyBEK8GxVpD66ozVbQve4RwlQNchNByi7wbcMAY6mDtRJXTsYNQNJfvURTv_Yf1_mAXGmkUl24i_zeKKPLPUi_oaSPu92dO97WbvBsJdyscb7J_cSLAYTAp7_XibOGyfW_205uMPKIaFJA-irsJ3QDF2c6lBG3tU65bcKJZU%3D)
 
 **Software**  
 SAS, Stata, R
