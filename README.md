@@ -2,12 +2,12 @@
 
 ## Project Details        
 Lauren Hunt, PhD, RN, FNP  
-Ken Covinsky, MD, MPH,  
-Edie Espejo, MA,   
-Irena Cenzer, PhD,   
-Heather Leutwyler, RN, PhD, NP,   
-Alexandra Lee, PhD, MSPH,   
-John Boscardin, PhD, and   
+Ken Covinsky, MD, MPH  
+Edie Espejo, MA   
+Irena Cenzer, PhD     
+Heather Leutwyler, RN, PhD, NP  
+Alexandra Lee, PhD, MSPH    
+John Boscardin, PhD     
 Janine Cataldo, PhD, APRN-BC, FAAN (posthumous) 
 
 **Data**
