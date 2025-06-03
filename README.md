@@ -1,16 +1,16 @@
 # Smoking Cessation
 
 ## Project Details        
-Lauren Hunt, PhD, RN, FNP  
-Ken Covinsky, MD, MPH  
-Edie Espejo, MA   
-Irena Cenzer, PhD     
-Heather Leutwyler, RN, PhD, NP  
-Alexandra Lee, PhD, MSPH    
-John Boscardin, PhD     
-Janine Cataldo, PhD, APRN-BC, FAAN (posthumous) 
+- Lauren Hunt, PhD, RN, FNP  
+- Ken Covinsky, MD, MPH  
+- Edie Espejo, MA   
+- Irena Cenzer, PhD     
+- Heather Leutwyler, RN, PhD, NP  
+- Alexandra Lee, PhD, MSPH    
+- John Boscardin, PhD     
+- Janine Cataldo, PhD, APRN-BC, FAAN (posthumous) 
 
-**Data**
+**Data**  
 We used data on respondents from the Health and Retirement Study <a href='https://hrsdata.isr.umich.edu/data-products/public-survey-data?_ga=2.40065890.1393985763.1647482700-299140865.1614386815'>public use data</a> (2018, Sep 2021 Final V1) and <a href='https://hrsdata.isr.umich.edu/data-products/rand?_ga=2.40065890.1393985763.1647482700-299140865.1614386815'>RAND HRS longitudinal data</a> (2018, Feb 2021 V1).
 
 **Project Start**  
